@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Food House Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🍽 Indian Food House Billing System</h1>
+
+        <div class="customer-details">
+
+            <h2>Customer Details</h2>
+
+            <input type="text" id="customerName" placeholder="Enter Customer Name">
+
+            <input type="text" id="mobileNumber" placeholder="Enter Mobile Number">
+
+            <select id="day">
+                <option value="">Select Day</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+            <button id="showMenu">Show Menu</button>
+
+        </div>
+
+        <hr>
+
+        <div id="menuContainer"></div>
+
+        <br>
+
+        <label><b>Coupon Code</b></label>
+
+        <input type="text" id="coupon" placeholder="SAVE10 / SAVE20">
+
+        <br><br>
+
+        <label><b>Payment Mode</b></label>
+
+        <select id="payment">
+
+            <option value="Cash">Cash</option>
+
+            <option value="UPI">UPI</option>
+
+            <option value="Debit Card">Debit Card</option>
+
+            <option value="Credit Card">Credit Card</option>
+
+        </select>
+
+        <br><br>
+
+        <button id="generateBill">
+            Generate Bill
+        </button>
+
+        <br><br>
+
+        <div id="bill"></div>
+
+    </div>
+
+    <script src="code.js"></script>
+
+</body>
+
+</html>
